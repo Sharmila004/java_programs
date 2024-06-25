@@ -30,6 +30,20 @@ class rectangle {
     }
 }
 
+// question 6
+class circle {
+
+    int radius;
+
+    public double area() {
+        return 3.14 * radius * radius;
+    }
+
+    public double perimeter() {
+        return 2 * 3.14 * radius;
+    }
+}
+
 public class practise43 {
 
     public static void main(String[] args) {
@@ -57,5 +71,16 @@ public class practise43 {
         System.out.println("area of the rectangle: " + rectarea);
         int rectperimeter = rect.perimeter();
         System.out.println("perimeter of the rectangle: " + rectperimeter);
+
+        // question 6
+        System.out.println("enter the radius of circle: ");
+        int r = sc.nextInt();
+        circle cr = new circle();
+        cr.radius = r;
+        double circlea = cr.area();
+        System.out.println("area of the circle: " + circlea);
+        double circleperimeter = cr.perimeter();
+        System.out.println("perimeter of the circle: " + circleperimeter);
+
     }
 }
